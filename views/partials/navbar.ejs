@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-md bg-secondary navbar-dark">
+    <h4 class="text-warning"><b>MSE ₹ </b></h4>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <form action="/logout" method="POST">
+          <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+          <button type="submit" class="btn btn-primary"><b>Logout</b></button>
+          </form>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link" href="/share"><h5><b>Share</b></h5></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/investment"><h5><b>Investment</b></h5></a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#"><h5><b>Book</b></h5></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><h5><b>News</b></h5></a>
+        </li>      -->
+      </ul>
+      
+    </div> 
+</nav>
